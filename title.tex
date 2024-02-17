@@ -1,0 +1,43 @@
+\input {templates/config.tex}
+\begin{titlepage}	% начало титульной страницы
+
+	\begin{center}		% выравнивание по центру
+		
+		\large \university \\
+		\large \faculty \\
+		\large \department \\[3cm]
+		% название института, затем отступ 6см
+		
+		\large \itemtitle \\ 
+		\large \text{по курсу} \\
+		\large \textbf{\subject} \\
+		\large \text{по теме} \\
+		\large \textbf{\labname} \\[3cm]
+		
+	\end{center}
+	
+	
+	
+	\begin{flushright} % выравнивание по правому краю
+		\begin{minipage}{0.5\textwidth} % врезка в половину ширины текста
+			\begin{flushright} % выровнять её содержимое по левому краю
+				
+				\large\textbf{Выполнил:}\\ [0.1cm]
+				\large \studentname \\
+				\large {1 курс, группа:} \group \\ [0.1cm]
+				
+				\large \textbf{Преподаватель:}\\ [0.1cm]
+				\large \tutorname
+				
+			\end{flushright}
+		\end{minipage}
+	\end{flushright}
+	
+	\vfill % заполнить всё доступное ниже пространство
+	
+	\begin{center}
+		\large \city \\
+		\large \the\year % вывести дату
+	\end{center} % закончить выравнивание по центру
+	
+\end{titlepage} % конец титульной страницы
